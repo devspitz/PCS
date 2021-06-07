@@ -1,0 +1,25 @@
+body  {
+    background-color: rgb(46, 32, 1);    
+    text-align: center
+    color: blanchedalmond;
+    font: fantasy
+    font-size: medium
+    font-weight: lighter
+ 
+}
+h1 {
+    font-style: italic;
+}
+img {
+    align-items: center;
+    width: 900;
+    height: 400px;
+    border-color: blanchedalmond;
+    border-width: 2px;
+    border-radius: 200px;
+}
+div  {
+    width: 400px;
+    border: 10px;
+    border-color: blanchedalmond;
+}
