@@ -1,0 +1,49 @@
+body  {
+    background-color: rgb(248, 239, 228);    
+    text-align: center;
+    color: rgb(54, 8, 0);
+    font: fantasy;
+    font-style:xx-large;
+    font-weight: lighter;
+ 
+}
+a, p {
+    font-family:fantasy;
+    color: rgb(229, 182, 182);
+    font-weight: lighter;
+    text-shadow: crimson;
+    letter-spacing: normal;
+    text-decoration: blanchedalmond;
+    line-height: normal;
+}
+h1 {
+    font-style: italic;
+    text-shadow: blanchedalmond;
+    text-transform: capitalize;
+}
+div  {
+    width: 400px;
+    border: 10px;
+    border-color: blanchedalmond;
+}
+#mainPic {
+    text-align: center;
+    width: 25cm;
+    height: 10cm;
+    transform: rotate(-5deg);
+    border-color: rgb(54, 8, 0);
+    border-width: 5em;
+}
+#logo {
+  display: block;
+  margin-left: 1em;
+  margin-right: auto;
+  width: 5cm;
+}
+.menuItem {
+    width: 900;
+    height: 400px;
+    border-color: blanchedalmond;
+    border-width: 2px;
+    border-radius: 200px;
+}
