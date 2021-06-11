@@ -1,0 +1,19 @@
+html {
+    background-color: black;
+}
+body {
+    background-color: white;
+    margin: auto;
+    max-width: 95em;
+}
+.yellowBox {
+    float: left;
+    margin: 5em;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: yellow;
+    padding: 10em;
+  }
+  h2 {
+    clear: left;
+  }
+  
