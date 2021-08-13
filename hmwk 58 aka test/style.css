@@ -1,0 +1,147 @@
+html {
+  padding: 1em;
+  margin: auto;
+}
+body {
+  width: 80%;
+  margin: auto;
+  margin-top: 2.5em;
+  margin-bottom: 3em;
+  background-color: white;
+  font-family: Helvetica, Arial, sans-serif;
+}
+nav {
+  background-color: black;
+  width: 100%;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header {
+  background-color: rgb(214, 218, 223);
+  border-radius: 1em;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 3em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul li {
+  margin-left: 10.5em;
+  list-style-type: none;
+  display: inline;
+}
+li:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+  @media screen and (min-width: 1000px) {
+    #productSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: -1em;
+    }
+    #productA {
+      grid-column: 1/2;
+    }
+    #productB {
+      grid-column: 2/3;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+    }
+    #productC {
+      grid-column: 3/4;
+    }
+  }
+
+.productsInGrid {
+  padding: 20px;
+  text-align: center;
+}
+.productsInGrid p {
+  text-align: left;
+}
+
+form {
+  text-align: center;
+  margin: auto;
+  padding: 1em;
+  background-color: rgb(214, 218, 223);
+  border-radius: 5px;
+}
+label {
+  padding: 5px;
+}
+input {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+#theTable{  
+  margin: auto;
+  overflow: auto;
+}
+table {
+  width: 15em;
+  height: 3em;
+  margin: auto;
+  border-collapse: collapse;
+
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 0.5em 1em;
+}
+
+td {
+  text-align: right;
+}
+
+tfoot td {
+  color: red;
+}
+caption {
+  caption-side: top;
+}
+
+tbody tr:hover {
+  background-color: lightskyblue !important;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgb(245, 196, 255);
+}
+thead td,
+tbody td:first-child {
+  font-weight: bold;
+}
+thead td {
+  text-align: center;
+}
+footer {
+  background-color: black;
+  width: 100%;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-left: 10em;
+}
+#title {
+  justify-self: center;
+  align-self: center;
+  text-transform: uppercase;
+}
+#subtitle {
+  justify-self: center;
+  align-self: center;
+  font-style: italic;
+}
