@@ -4,7 +4,7 @@ const interest = (function () {
 
   
     function setRate(theRate) {
-      return rate=theRate
+      return rate=theRate;
     }
     function setYears(numYears) {
         return years = numYears;
