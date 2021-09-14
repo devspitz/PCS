@@ -1,3 +1,4 @@
+// SL - why no for loops?
 window.app.module.increment();
 window.app.module.increment();
 window.app.module.increment();
