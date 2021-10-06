@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #parent_popup{
+        
+        background-color: white;
+      
+        
+        position: fixed;
+
+        }
+        
+        #popup{
+        
+        background: rgb(192, 192, 236);
+        
+        width: 400px;
+        
+        margin: auto;
+        
+        padding: 5px;
+        text-align: center;
+        
+        border: 2px solid black;
+        
+        position: relative;
+        }
+      
+    </style>
+</head>
+<body>
+    <div id="parent_popup">
+
+        <div id="popup">
+        
+       <p>This is a test of an emergency brodcast sytstem</p>
+        Is this really an emergency?
+        <input type="text" id="theAnswer" value="">
+       <button>send</button>
+        <hr>
+        <a class="close" title="close" onclick="document.getElementById('parent_popup').style.display='none';">
+        <button id="button">Ok</button>
+            </a></div>
+        <p id="result" >Your Answer was....</p>
+        </div>
+        
+        
+    <script src="popUp.js"></script>
+</body>
+</html>
