@@ -20,7 +20,7 @@ window.pcs.messageBox = (function () {
     modalDiv.style.display = 'none';
     document.body.appendChild(modalDiv);
 
-    function showMessageBox(msg, modal, buttonStrings = ["ok"], callback) {
+    function showMessageBox(msg, modal, buttonStrings = ["ok"], callback = undefined) {
         const messageBoxDiv = document.createElement('div');
         const span = document.createElement('span');
         span.innerHTML = msg;
