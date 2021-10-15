@@ -1,8 +1,12 @@
-Files from last night's class have been committed to Github and uploaded to Dropbox.
 
 For homework.
-Create a page that allows the user to enter the name of a file to load. When the user clicks the "load" button, load that file using AJAX and display the contents somewhere on the page (not an alert or a console log, show it on the page). As mentioned, files to be loaded must be on same domain (we will talk more about this next class iy"h) and in a location servable by your web server - for simplicity start with simply loading files located in the same directory as the html file as we did in class. 
-Have a "loading..." message or icon (maybe a spinner)  that shows while the loading is happening. (you might need an artificial timeout somewhere to make the spinner stay long enough to really be noticed since your load will be so fast but you should be able to see it at flash briefly even without adding artificial wait times)
+Create a page that allows the user to enter the name of a file to load. When the user clicks the "load" button, load that file 
+using AJAX and display the contents somewhere on the page (not an alert or a console log, show it on the page). As mentioned,
+ files to be loaded must be on same domain (we will talk more about this next class iy"h) and in a location servable by your web 
+ server - for simplicity start with simply loading files located in the same directory as the html file as we did in class. 
+Have a "loading..." message or icon (maybe a spinner)  that shows while the loading is happening. (you might need an artificial
+ timeout somewhere to make the spinner stay long enough to really be noticed since your load will be so fast but you should be able 
+ to see it at flash briefly even without adding artificial wait times)
 Use jQuery for all DOM manipulation. For the actual Ajax call you can either use fetch, or the lower level XMLHttpRequest if you for some reason want to. We did both in class. If you do use fetch, we used response.json() in class to get the response (JSON) text as an object or to simply get the response text as a string we used response.text() instead. jQuery does have its own Ajax helper methods  (very similar to fetch) which we may talk about briefly in class, but as mentioned, now that fetch exists, jQuery Ajax is less popular and we will most often be using fetch. 
 We didn't talk about how to check if something went wrong if using fetch (we did in the lower level XMLHttpRequest example). If using fetch, the response object you get back that we call .json or .text on also has things like status (< 400 is good) and statusText. You call also call .ok which returns true if status was not an error status so you can do something like
 .then(r => {
