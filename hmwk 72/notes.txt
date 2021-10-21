@@ -1,0 +1,5 @@
+synactic sugar
+way 1:
+with fetch and .then and returns
+or await (and try catch)
+open waether sign up
