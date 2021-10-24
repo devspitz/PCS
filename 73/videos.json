@@ -1,0 +1,17 @@
+[
+    {
+        "Title": "Kol Zman",
+        "img": "kolZman.png",
+        "id": "kolZeman"
+    },
+    {
+        "Title": "Al Hanaar",
+        "img": "elHanaar.png",
+        "id": "alHanaar"
+    },
+    {
+        "Title": "Ivri Anochi",
+        "img": "ivri.png",
+        "id": "ivri"
+    }
+]

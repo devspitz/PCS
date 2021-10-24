@@ -1,0 +1,19 @@
+70
+prepend vs append
+rewatch 10 minute
+830-855
+930-940
+953-1000
+
+.slideup/down
+triiger vs dispatch event
+xyz[0] to go with dom with a jquery thingy
+.submit
+.on for any event
+click, foo- only do it on thses kifd
+youll only get children
+$(.form bbutton)...like css selectot
+4 an  input, do elm.value
+e.ovverride
+.prop(''desab;ed0), false
+prop is the curretn value of an attribute
