@@ -1,0 +1,59 @@
+can do a searchbar
+geolocation api- in mdn
+-show his directions, weather..
+7:41 get anme copilot
+chain the append and click handler
+autoplay
+video.attr(conrols, true)
+if you put it in an anchor it changes colors..
+this.style =// this.css(--can use a couple things as a object
+x use jquery slim for jsonP
+kquery for jsonp $.getScritct('cyd')
+
+$.ajax({
+url: 'data?callback=?', //callback wil make its own wrapper
+dataType: 'jsonp'
+}).then
+
+
+this.addClass
+.removeClass
+cursor: pointer
+
+cross domain policy
+Aka COrs
+
+jsonP-loads scrpit in js and wrapped in a callback
+
+callback
+
+parse
+https://developers.google.com/maps/documentation
+
+1003- 1005
+
+Build a photo viewing app. We will use the flickr API to get pictures (For those who have the API blocked by a filter I will include a sample result and instructions on what you need to do differently to use it, below). Present the user with a search box and a button. When the user clicks the button, use the flickr feed api to load pictures based on users selection and display them to the user.
+
+Show title and picture for each picture. If you want to get fancy, show one picture at a time with next and previous buttons (i.e. a carousel - but do this after you get the simple case, showing all the pictures at once, working)
+
+Since we don't host flickr on our domain, normally getting this data via AJAX would be forbidden as its cross domain. As discussed, Flickr does not seem to support adding a CORS header to tell modern browsers to allow it, but they do provide the data as JSONP to avoid this problem. You can handle fetching JSONP by loading it as a script and writing a global function to receive the data as we did in class, or more simply you can use jQuery.getJSON exactly as we did in class and it will just work. jQuery will take care of the needed work (global function etc) to make it all happen. Just include a jsoncallback=? at the end of the url and it will just work (see the last examples in jsonp.js from class where we use jQuery to fetch the weather using jsonp. Using the flickr data url instead would get the flickr data.
+You don't really have to understand how JSONP works at all. As discussed in class, JSONP is not commonly used anymore now that we have CORS, so as long as you can load the data (which again could be as simple as cutting and pasting the final weather API example from jsonp.js file from class and changing url) your good)
+
+Url to get json data:
+https://api.flickr.com/services/feeds/photos_public.gne?tags=kotel&format=json&jsoncallback=?
+where tags will be filled with whatever the user typed in instead of kotel.
+(go ahead, try that url in your browser - but put in foo instead of the ? at the end. Look at the data you get back, a JavaScript object being passed to a function foo - just like we did in class. This is JSONP in action.)
+
+This returns an object with an items array. Each item in the items array ha0s a title and a "media" object. In the "media" object is a property call "m". This is a url to the picture. (Note: If you strip of the _m at the end of the image name you get a nicer sized image)
+
+See https://www.flickr.com/services/api/ for more details on the flickr API (I'm not that familiar with it, just using it for this example)
+
+Take some time to make something impressive that you would be proud to show to someone. Dont just throw the pictures on the page. Use your combined html/css/javascript skills to make the page nice and the user experience impressive.
+
+IF YOU CANT ACCESS FLICKR due to filtering (not a bad policy, but its an interesting API for us to play with) I put 2 sample files kotelResult.js and kotelResult.json up at https://www.dropbox.com/sh/cgc95a36zn3xdos/AAClDfMpJAfbzuc2JHbc7olCa?dl=0. They contain sample results from the call shown above the .json one as normal json so you can just load with a normal fetch, and the other the actual jsonp result received which you can load as jsonp if you want to work with that, you can load that again either doing jsonp yourself or using jQuery but telling it the name of the global function it should use by passing the jsonpCallback argument as we did in class(jQuery35103889914196040962_1635131841821 in this case as thats whats hard coded in the fake jsonp file, of course you could change that if you like)
+
+The images may not load for you either, I also put most of the images returned by that query up in dropbox in the same location.
+I modified the .json file to expect the images in the current directory as well (and removed _m from the file names since I loaded the bigger ones) since if you couldn't get the json, you likely wouldn't be able to get the pictures either.
+
+Maybe add a checkbox or something to the page that tells it whether to use the real API url and images or the fake json file and stand in images so it can work both ways...
+1015-1020
