@@ -31,3 +31,4 @@ parse
 https://developers.google.com/maps/documentation
 
 1003- 1005
+llocalSrarf=ge.set/getItem

@@ -16,11 +16,33 @@
         }
 
         #map {
-            width: 100%;
+            box-sizing: border-box;
+            width: 75%;
+            float: left;
         }
 
-        input {
-            width: 20em;
+        #sidebar {
+            box-sizing: border-box;
+            width: 25%;
+            float: left;
+            text-align: center;
+        }
+
+        #sidebar li {
+            border: 1em solid gray;
+
+            text-align: left;
+
+        }
+
+        #sidebar ul {
+            text-align: left;
+        }
+
+        #sidebar img {
+            height: 60px;
+            width: 100px;
+            vertical-align: middle;
         }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -29,27 +51,38 @@
 </head>
 
 <body>
+    <div id="sidebar">
+        <h1>World Wonders</h1>
 
-    <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
-            aria-describedby="basic-addon2" id="search" placeholder="Search for a place in the ENTIRE world">
-        <div class="input-group-append">
-            <button class="btn btn-outline-secondary" type="button" id="go">Find</button>
+        <div class="input-group mb-3 searchBar">
+            <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"
+                id="search" placeholder="Search anywhere" required>
+            <div class="input-group-append">
+                <button  class="btn btn-outline-secondary"  type="button" id="go">Find</button>
+            </div>
+
+            <ul id="list"></ul>
         </div>
+
     </div>
+
+
 
     <div id="map"></div>
 
 
 
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqOC6QrKZwjBsGAbRNurSVMHuFq-d3qmI
-&v=weekly"></script>
+   
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAebVi_VeM2C4RUCnGFdNEkqcLdrDQ877c&v=weekly&libraries=drawing"></script>
     <script src="map.js"></script>
 </body>
 

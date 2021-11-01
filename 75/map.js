@@ -2,6 +2,7 @@
 (function () {
     'use strict';
     const searchInput = $('#search');
+    const go = $('#go');
     let location;
 
     const map = new google.maps.Map(document.getElementById('map'), {
@@ -10,12 +11,6 @@
         mapTypeId: google.maps.MapTypeId.SATELLITE
     });
     const bounds = new google.maps.LatLngBounds();
-
-    /*map.addListener('center_changed', () => {
-        const center = map.getCenter();
-        console.log('center changed', center.lat(), center.lng());
-        map.setPosition(center);
-    });*/
 
     function getMap(longitude, latitude, summary, img, title, link) {
 
@@ -29,10 +24,10 @@
             map: map,
             animation: google.maps.Animation.DROP,
             title: title,
-            icon: {
+            icon: img ? {
                 url: img,
                 scaledSize: new google.maps.Size(50, 50)
-            }
+            } : undefined
         });
 
         marker.addListener('click', () => {
@@ -43,20 +38,17 @@
             infoWindow.open(map, marker);
         });
     }
+    const drawer = new google.maps.ControlPosition.TOP_CENTER;
 
     function findingInfo() {
 
-        $('#go').click(() => {
+        go.click(() => {
             console.log(`val: ${searchInput.val()}`);
             $.getJSON(`http://api.geonames.org/wikipediaSearch?q=${searchInput.val()}&maxRows=10&username=aim1&type=json`)
                 .then(data => {
-                    console.log(data);
-
-
+                    console.log(data)
                     data.geonames.forEach(a => {
-
                         const longitude = a.lng;
-
                         const latitude = a.lat;
                         const summary = a.summary;
                         const img = a.thumbnailImg;
@@ -64,12 +56,22 @@
                         const link = a.wikipediaUrl;
 
                         getMap(longitude, latitude, summary, img, title, link);
-
-
                         bounds.extend(location);
-
+                        const listItem = $('#list');
+                        $(`
+                        <li>
+                       <h2>${title}<h2>
+                       <img src=${img} >
+                       <p>${summary}</p>
+                       </li>`)
+                            .appendTo(listItem);
+                        /*      .click(() => {
+                                 const goToBounds = map.getBounds();
+                                 goToBounds.extend(location);
+                                 map.fitBounds(goToBounds);                         
+                     }); */
+                        map.fitBounds(bounds);
                     });
-                    map.fitBounds(bounds);
                 });
         });
     }
