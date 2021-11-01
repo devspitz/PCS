@@ -51,7 +51,7 @@
             $.getJSON(`http://api.geonames.org/wikipediaSearch?q=${searchInput.val()}&maxRows=10&username=aim1&type=json`)
                 .then(data => {
                     console.log(data);
-                    map.clearOverlays();
+
 
                     data.geonames.forEach(a => {
 

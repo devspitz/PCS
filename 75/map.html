@@ -23,18 +23,32 @@
             width: 20em;
         }
     </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 </head>
 
 <body>
-    <input type="search" name="search" id="search" placeholder="Search for a place in the ENTIRE world">
-    <button id="go">Find</button>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+            aria-describedby="basic-addon2" id="search" placeholder="Search for a place in the ENTIRE world">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="go">Find</button>
+        </div>
+    </div>
 
     <div id="map"></div>
 
 
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=\
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqOC6QrKZwjBsGAbRNurSVMHuFq-d3qmI
 &v=weekly"></script>
     <script src="map.js"></script>
 </body>
