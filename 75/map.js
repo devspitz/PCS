@@ -3,18 +3,19 @@
     'use strict';
     const searchInput = $('#search');
     const go = $('#go');
-    let location;
+    let location = { lat: 41.492353, lng: -81.520224 };
 
     const map = new google.maps.Map(document.getElementById('map'), {
-        center: ({ lat: 41.492353, lng: -81.520224 }),
+        center: location,
         zoom: 12,
         mapTypeId: google.maps.MapTypeId.SATELLITE
     });
+
     const bounds = new google.maps.LatLngBounds();
 
     function getMap(longitude, latitude, summary, img, title, link) {
 
-        location = { lat: latitude, lng: longitude };
+        location = ({ lat: latitude, lng: longitude });
 
         const infoWindow = new google.maps.InfoWindow({
         });
@@ -38,9 +39,7 @@
             infoWindow.open(map, marker);
         });
     }
-    const drawer = new google.maps.ControlPosition.TOP_CENTER;
-    drawer.setMap(map);
-    google.maps.event.addListenerdrawingManager, 'overlaycomppl()
+
     function findingInfo() {
 
         go.click(() => {
@@ -56,21 +55,21 @@
                         const title = a.title;
                         const link = a.wikipediaUrl;
 
-                        getMap(longitude, latitude, summary, img, title, link);
+                        getMap(longitude, latitude, summary, img, title, link)
                         bounds.extend(location);
                         const listItem = $('#list');
                         $(`
                         <li>
-                       <h2>${title}<h2>
-                       <img src=${img} >
-                       <p>${summary}</p>
+                          <img src=${img} class="img-thumbnail">
+                        <h2 id="h2">${title}<h2>
+                       <p id="p">${summary}</p>
                        </li>`)
-                            .appendTo(listItem);
-                        /*      .click(() => {
-                                 const goToBounds = map.getBounds();
-                                 goToBounds.extend(location);
-                                 map.fitBounds(goToBounds);                         
-                     }); */
+                            .appendTo(listItem)
+                            .click(() => {
+                                const goToBounds = map.getBounds();
+                                goToBounds.extend(location);
+                                map.fitBounds(goToBounds);
+                            });
                         map.fitBounds(bounds);
                     });
                 });

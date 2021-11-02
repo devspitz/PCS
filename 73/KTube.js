@@ -41,9 +41,9 @@
            <img src=${video.img}  class="rounded mx-auto d-block">
             <option class="figure-caption " value="${video.id}" name="selected">${video.Title}</option>
             </figure>`).appendTo(videoChoices);
-
-
+            
         });
+
         $('option[name="selected"]').click(function () {
             videoSelected(this.value);
         });

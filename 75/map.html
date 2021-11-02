@@ -11,38 +11,74 @@
         body,
         #map {
             height: 100%;
-            margin: 0;
-            padding: 0;
         }
 
         #map {
+            height: 100%;
             box-sizing: border-box;
-            width: 75%;
+            width: 73%;
             float: left;
+        }
+
+        #h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: inline;
+            padding: 5px;
+            text-decoration: underline;
+        }
+
+        #p {
+            clear: left;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            padding: 1em;
         }
 
         #sidebar {
+            padding: 1em;
             box-sizing: border-box;
-            width: 25%;
+            width: 26%;
             float: left;
             text-align: center;
+            background-color: rgb(0, 0, 29);
+            color: white;
+            height: 100%;
         }
 
         #sidebar li {
-            border: 1em solid gray;
-
+            list-style-type: none;
+            border: 1px solid lightslategray;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 1em;
             text-align: left;
-
+            background-color: rgb(244, 249, 255);
+            color: rgb(2, 0, 14);
+            border-radius: 5px;
+            margin-top: 5px;
+            height: 14em;
+            overflow: hidden;
         }
 
         #sidebar ul {
+            margin-top: 1em;
             text-align: left;
+            padding: 1px;
         }
 
         #sidebar img {
             height: 60px;
             width: 100px;
-            vertical-align: middle;
+            float: left;
+        }
+
+        .searchBar {
+            margin-left: 8px;
+            margin-bottom: 1em;
+        }
+
+        #h1 {
+            margin-top: 9px;
+            margin-bottom: 1.5rem;
         }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -52,13 +88,13 @@
 
 <body>
     <div id="sidebar">
-        <h1>World Wonders</h1>
+        <h1 id="h1">World Wonders</h1>
 
         <div class="input-group mb-3 searchBar">
             <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"
                 id="search" placeholder="Search anywhere" required>
             <div class="input-group-append">
-                <button  class="btn btn-outline-secondary"  type="button" id="go">Find</button>
+                <button class="btn btn-outline-secondary" type="button" id="go">Find</button>
             </div>
 
             <ul id="list"></ul>
@@ -72,7 +108,7 @@
 
 
 
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -81,8 +117,8 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-   
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAebVi_VeM2C4RUCnGFdNEkqcLdrDQ877c&v=weekly&libraries=drawing"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAebVi_VeM2C4RUCnGFdNEkqcLdrDQ877c&v=weekly"></script>
     <script src="map.js"></script>
 </body>
 
