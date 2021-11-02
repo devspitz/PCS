@@ -2,6 +2,8 @@
 
     const results = $('#results');
     const searchbar = $('#search');
+    const carousel = $('.carousel-inner')
+    let i = 0;
 
     async function loadJson(url) {
         try {
@@ -18,19 +20,33 @@
     }
     async function picList() {
         const pictures = await loadJson('kotelResult.json');
-        if (pictures) {
-            console.log('went into line 22');
-            $('#go').click(function () {
-                console.log(searchbar.val());
 
+        if (pictures) {
+            $('#go').click(function () {
                 pictures.items.forEach((pic) => {
-                    const thePicture = $(`<img src=${pic.media.m}>`);
-                    results.append(`<h1>${pic.title}</h1>`);
-                    results.append(thePicture);
+                    if (i === 0) {
+                        i++;
+                        $(`<div class="carousel-item active">
+                        <img class="d-block w-100" src=${pic.media.m} alt="First slide">
+                   <div class="carousel-caption d-none d-md-block">
+                       <h5>${pic.title}</h5>
+
+                     </div>
+                        </div>
+                    `).appendTo(carousel);
+                    } else {
+                        $(`<div class="carousel-item">
+                        <img class="d-block w-100" src=${pic.media.m} alt="Next slide">
+                        <div class="carousel-caption d-none d-md-block">
+                       <h5>${pic.title}</h5>  
+                     </div>
+                    </div>
+                    `).appendTo(carousel);
+                    }
                 });
+
             });
         }
     }
     picList();
-
 }());

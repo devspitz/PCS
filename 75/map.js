@@ -39,7 +39,8 @@
         });
     }
     const drawer = new google.maps.ControlPosition.TOP_CENTER;
-
+    drawer.setMap(map);
+    google.maps.event.addListenerdrawingManager, 'overlaycomppl()
     function findingInfo() {
 
         go.click(() => {
