@@ -25,20 +25,23 @@
     async function videoSelected(videoToPlay) {
         const video = await loadJson(`${videoToPlay}.json`);
         if (video) {
-            console.log(video);
-
+            $('#nowPlaying').css("display", "block");
             videoTitle.text(video.Title);
             videoPlaying.attr('src', video.video);
+            //  videoPlaying.attr('hidden', true);
             videoPlaying[0].play();
         }
     }
 
     async function videoList() {
+        $('#nowPlaying').css("display", "none");
         const videos = await loadJson('videos.json');
         videos.forEach(video => {
-            const picture = $(`<img src=${video.img}>`);
-            videoChoices.append(`<option value="${video.id}" name="selected">${video.Title}</option>`);
-            videoChoices.append(picture);
+            $(`<figure class="figure px-2 ">
+           <img src=${video.img}  class="rounded mx-auto d-block">
+            <option class="figure-caption " value="${video.id}" name="selected">${video.Title}</option>
+            </figure>`).appendTo(videoChoices);
+
 
         });
         $('option[name="selected"]').click(function () {
