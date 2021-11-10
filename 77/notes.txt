@@ -1,0 +1,30 @@
+&libraries-drawing
+its a library of an api
+
+globals= goolge
+stringify---parse
+
+case xyz: 
+break... js switch statement
+
+but the array is empty again by refresha nd redo action.. so set array in the getLocal staorge 
+
+can drag mske sure to save new position
+
+can deletee- put in deleteMode and listen for click
+
+DRAG AND DROP
+-can use jQueryUI
+
+screenxy is only relative to screen
+
+cleint xy, page xy(if scrooll bar)
+
+offset is how far youare fromt hr top/lrft corners
+
+
+listen on parent level
+e.target--get this guy
+nodrag cursor
+
+relook at homeork 75 timout

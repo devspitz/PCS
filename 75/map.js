@@ -32,11 +32,13 @@
         });
 
         marker.addListener('click', () => {
-            infoWindow.setContent(`
+            setTimeout(() => {
+                infoWindow.setContent(`
              ${summary}
                <br>
                   <a target="_blank" href="${link}">more info</a>`);
-            infoWindow.open(map, marker);
+                infoWindow.open(map, marker);
+            }, 5000)
         });
     }
 

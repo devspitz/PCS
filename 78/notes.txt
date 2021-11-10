@@ -1,0 +1,18 @@
+use autoplay
+slide down parts
+diff scenes
+play button for music looks nice
+gets big when selected
+sound effeects
+
+use paint.net for small pics
+8:10-8:12
+850-905
+910-915
+
+object.assign
+p.___proto___ = xysfunctions;
+
+constructers
+use capital, call it with new
+1005-1025
