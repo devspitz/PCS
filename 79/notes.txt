@@ -1,0 +1,17 @@
+can make an object wifth no prototype, if you x want all the funstions-weird case
+object.assign(v, thefunctions) sticks functions into objects...copies SOURCE into its DESTINATION
+the word new makes the object
+ovverwrite things in the object chain
+//920-925
+inheritance and prototype chain
+prototypical inheritance see 923
+
+calsses
+class properthy
+babel
+
+1002-1006
+private variables/functions
+inherticNCE FOR CLsses: extends xtzz
+
+mixin

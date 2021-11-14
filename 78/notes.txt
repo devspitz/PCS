@@ -13,6 +13,8 @@ use paint.net for small pics
 object.assign
 p.___proto___ = xysfunctions;
 
+CLASSES
 constructers
+add protoyprs to them
 use capital, call it with new
 1005-1025
