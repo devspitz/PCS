@@ -1,0 +1,36 @@
+classes x private- x put in function
+
+1- classe 2- object.creat 3- use prottypes/conatructors 4-old fashiion objestcs
+classes r automatically 'use strict'
+class level variables, also #zjf private variables
+
+static belongs to class, not every intance
+call static xyz
+acess with theClass.staticThingy
+
+.split// itll be an aray
+
+get set
+
+why x use getter and setter
+protofunction?
+
+value, writable configurable
+innumerable
+deltete
+obhect.definepropery
+
+for let in
+
+you x wanna interate thru things in the parent, onlly your new own data, so if (child.hasOwnPropery)
+clarify 955-958
+
+dstrucute can skip valuez
+use [] or {}for objects(have to use right names for objects)
+
+spread operator ...theArray
+takes how a=ever many you passed in-if an aray cant get taken-likeMath.max
+arguments 
+rest
+
+1018-1020
