@@ -1,0 +1,13 @@
+have tp use cpread, also when you acll it, cuz, it cant forEach an Arry.. advange-u x needa call with an array
+bacwards = fLSE
+fist: chaim, a-reame objext 759-804
+x,y,w,height
+math.PI*2=whole circle
+mdn geomtry radians
+flase/true?
+draw()-GETS RETUTN
+DRAW-CALLS DUNCTION(U NEED THIS BALL.DRAW.BIND(X)
+parse, Number, or +xyz
+(x erase square he used to  popeukte, cjuz can b eraseing s/t else)
+***mdn break the wall
+935-1022

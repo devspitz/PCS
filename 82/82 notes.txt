@@ -1,0 +1,8 @@
+732-844 hmwk : i x rly paid attn.
+
+key arrowup/left/right/down
+1000 set to beiginning of osund sound.currentTime=0
+
+js breakout game
+
+put in crunchsound

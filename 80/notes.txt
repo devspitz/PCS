@@ -23,8 +23,6 @@ obhect.definepropery
 for let in
 
 you x wanna interate thru things in the parent, onlly your new own data, so if (child.hasOwnPropery)
-clarify 955-958
-
 dstrucute can skip valuez
 use [] or {}for objects(have to use right names for objects)
 
@@ -33,4 +31,5 @@ takes how a=ever many you passed in-if an aray cant get taken-likeMath.max
 arguments 
 rest
 
-1018-1020
+object.keys
+

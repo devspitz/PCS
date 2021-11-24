@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body,
+        theCanvas {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        form {
+            position: absolute;
+            top: 1em;
+            left: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="addAnt">
+        <label>
+            color: <input type="color" id="color">
+        </label>
+        <label>
+            size: <input type="number" min="1" max="200" value="20" id="size">
+        </label>
+        <label>
+            Amount: <input type="number" min="1" max="200" value="20" id="amount">
+        </label>
+        <button>Add Ants!</button>
+    </form>
+
+    <canvas id="theCanvas"></canvas>
+    <script src="ants.js"></script>
+</body>
+
+</html>
