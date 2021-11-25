@@ -46,8 +46,8 @@
             this.body.forEach(bodyPart => {
                 //  context.beginPath();
 
-                context.fillColor = 'green';
-                context.fillRect(bodyPart.x, bodyPart.y, snakeSize-1, snakeSize-1);
+                context.fillStyle = 'green';
+                context.fillRect(bodyPart.x + 10, bodyPart.y + 10, snakeSize - 30, snakeSize - 30);
 
             });
         }
