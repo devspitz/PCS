@@ -31,10 +31,25 @@
             document.addEventListener('keydown', event => {
                 switch (event.key) {
                     case 'ArrowUp':
+                        if (this.body.length === 1 || this.direction !== 'ArrowDown') {
+                            this.direction = event.key;
+                        }
+                        break;
                     case 'ArrowDown':
+                        if (this.body.length === 1 || this.direction !== 'ArrowUp') {
+                            this.direction = event.key;
+                        }
+                        break;
                     case 'ArrowLeft':
+                        if (this.body.length === 1 || this.direction !== 'ArrowRight') {
+                            this.direction = event.key;
+                        }
+                        break;
                     case 'ArrowRight':
-                        this.direction = event.key;
+                        if (this.body.length === 1 || this.direction !== 'ArrowLefy') {
+                            this.direction = event.key;
+                        }
+                        break;
                 }
             });
             this.draw();
