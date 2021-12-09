@@ -7,23 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #box {
+        .box {
             width: 100px;
             height: 100px;
-            background-color: yellow;
+            background-color: #ffff00;
             border: 1px solid black;
-            position:absolute;
-            top: 0;
-            right: 0;
+
+            position: absolute;
+            top: 50px;
+            left: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div id="box"></div>
-    <script src="drag.js"></script>
+    <button id="add">add box</button>
+    <input type="color" id="color" value="#FFFF00">
+
+    <div class="box"></div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="drag.js"></script>
 </body>
 
 </html>

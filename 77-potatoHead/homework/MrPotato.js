@@ -1,37 +1,32 @@
 (function () {
     'use strict';
 
-    let dragging = null; //false;
+    let dragging = null;
     let offset;
+    let newPart;
 
     $(document)
-        .on('mousedown', '.box', e => {
-            console.log('mousedown');
-            //dragging = true;
+        .on('mousedown', '.part', e => {
             dragging = $(e.target);
+            console.log(dragging);
             offset = { x: e.offsetX, y: e.offsetY };
+            if (dragging.classList.hasClass('part limb')) {
+                newPart = $(`<img src=${dragging[0].currentSrc} class="part limb" alt="" position="absoute" top=${dragging.top} left=${dragging.left}>`);
+                $('#partsSection').append(newPart);
+            }
         })
         .mousemove(e => {
             if (dragging) {
-                e.preventDefault(); // prevent weird occasional no drag cursor
-                console.log('mousemove', e.offsetY, e.offsetX);
-                //theBox.css({top: e.pageY - e.offsetY, left: e.pageX - e.offsetX});
-                //theBox.css({ top: e.pageY - offset.y, left: e.pageX - offset.x });
-                dragging.css({ top: e.pageY - offset.y, left: e.pageX - offset.x });
+                e.preventDefault();
+                if (dragging.hasClass('limb')) {
+                    newPart.css({ top: e.pageY - offset.y, left: e.pageX - offset.x });
+                    $('#partsSection').append(newPart);
+                }
             }
         })
         .mouseup(() => {
             if (dragging) {
-                console.log('mouseup');
-                //dragging = false;
-                dragging = null;
+                dragging = false;
             }
         });
-
-    const colorInput = $('#color');
-    $('#add').click(() => {
-        $('<div class="box"></div>')
-            .appendTo($(document.body))
-            .css('background-color', colorInput.val());
-    });
 }());

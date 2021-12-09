@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            text-align: center;
+        }
+
+        #partsSection {
+            border: 5px solid rgba(255, 227, 236, 0.8);
+            width: 17%;
+            overflow: hidden;
+            padding: 1em;
+            height: 720px;
+
+            background-color: rgb(231, 112, 0);
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: white;
+        }
+
+        .part {
+            margin: 1em;
+
+        }
+
+        .fullscreen-bg {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -100;
+        }
+
+        .fullscreen-bg__video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #head {
+            position: absolute;
+            top: 100;
+            left: 100;
+            z-index: 50;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <audio src="welcome.mp3" autoplay hidden></audio>
+    <div class="fullscreen-bg">
+
+        <video loop muted autoplay class="fullscreen-bg_video">
+            <source src="background.mp4" type="video/mp4">
+
+        </video>
+
+    </div>
+    <div id="head">
+        <img src="head.png" class="part" alt="">
+    </div>
+    <div id="partsSection">
+        <h3 display-4>
+            Mr. Potato Head Creater
+        </h3>
+        <img src="blueeyes.png" class="part limb" alt="">
+        <img src="faceglasses.png" class="part limb" alt="">
+        <img src="glasses.png" class="part limb" alt="">
+        <img src="lips.png" class="part limb" alt="">
+        <img src="mustachemouth.png" class="part limb">
+        <img src="nose.png" class="part limb">
+        <img src="pinkears.png" class="part limb">
+        <img src="plaineyes.png" class="part">
+        <img src="purpleeyes.png" alt="" class="part limb">
+        <img src="rednose.png" class="part limb">
+        <img src="teeth.png" class="part limb">
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="MrPotato.js"></script>
+
+</body>
+
+</html>

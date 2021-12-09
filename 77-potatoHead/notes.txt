@@ -22,9 +22,12 @@ cleint xy, page xy(if scrooll bar)
 
 offset is how far youare fromt hr top/lrft corners
 
-
+by value by color input, you cant just write a color, need#fff
 listen on parent level
 e.target--get this guy
 nodrag cursor
 
+.on event filters down 2 kis, even before they are 'born'
+
+jquery resizeable and draggable
 relook at homeork 75 timout
