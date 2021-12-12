@@ -1,0 +1,17 @@
+830-900 skip around
+930-936
+
+global, async issues-ned a certaun order, waste of words/space...
+therefore use webpack
+
+npm free js stuff
+use popular librarues
+npm-install and u need nodr
+npm init -y
+npm install/-i moment
+just need your dependecia
+make shur you have a gitinore file
+versuion
+semantic reasioning major vrsion.minorversision.patch 
+main stuufand your code might break!.feature.fixedMinorbug
+~ or ^3.0,1 carrot/tilte
