@@ -14,10 +14,10 @@
         constructor(radius, color) {
             this.radius = radius;
             this.color = color;
-            this.x = this.radius;
-            this.y = this.radius;
-            this.dx = 10;
-            this.dy = 10;
+            this.x = window.innerWidth / 2;
+            this.y = window.innerHeight / 2;
+            this.dx = 5;
+            this.dy = 5;
         }
 
         drawBall() {
@@ -54,20 +54,20 @@
     });
 
     function breakBrick(BallX, BallY) {
-        bricks.forEach(function () {
-            if (BallX === Bricks.x && BallY === Bricks.y) {
+        bricks.forEach(b => {
+            if (BallX === b.x && BallY === b.y) {
                 console.log('hit');
             }
         });
     }
     const balls = [];
-    balls.push(new Ball(5, 'red'));
+    balls.push(new Ball(3, 'black'));
     setInterval(() => {
         context.clearRect(0, 0, canvas.width, canvas.height);
         balls.forEach(ball => ball.drawBall());
     }, 100);
 
     setTimeout(function () {
-        balls.push(new Ball(Number(12), 'blue'));
+        balls.push(new Ball(Number(3), 'blue'));
     }, 5000);
 }());
