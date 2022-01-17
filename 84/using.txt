@@ -1,0 +1,61 @@
+webpack
+bundles code well
+build swt
+call js main
+package.jason "private: true"
+dependiecs-things needed to be shipped to the browswer for users
+
+dev dependecncy, only needed for develoers
+npm i -D webpack
+.\node_modules\.bin\webpack
+urself---npm install -D webpack-cli
+Can install both at once npm install -D webpack webpack-cli
+- npx webpack looks if you have it,, if not, it gets it
+scrtips -> build they know to look in nide bulid packse, so just wrie "build": "webpacl" so npm run build (or whatever ypou call the script
+)
+.\ = currents direcypry
+you need a src file for your stuff with default, can set mode to deveopment
+
+if loda in2 one bunlde- less expensive, bu t if you change s/t, e/t schanges, maybr x needed whole bundle
+
+import $ from 'jquery', webpack will find it during build time
+-bruoght into moduke instead of global namespace 
+in buile write  --mode = production or development
+eval is evil;( runs strings as js
+
+make a configuration file (see vsc file)(btw can pass in a 2 stuuf, multiple directpry path)
+
+--config = web/config.js  can put it into the build scrpit or termial
+
+load in the style
+add everyrthing to be installed in package.json, and o]in webpack config
+
+for images test:
+type:
+
+see documunttation 935- change in the file
+---sizes for images
+asset/inline- e/t will be a 64
+or resource
+can have it depending on size: type: asset/resource.... or asset/inline or just asset 
+parse: dataURLCondtiion: maxSize: 2*12
+import sdakoak from sskksm.jpg
+less than 8 is inline
+
+get jsom into your  bundles, instead of a fetch
+-only if its static, so you can take it at build time
+
+json5
+--good cuz u can add comments and uquited
+---u needa loader get it at 10:02, anf put in2 webpack config--put it in with a required
+
+
+csv files
+--add csv loader on webpack.js.org 
+process: put in command promt, add to config, impot balh from /fgd.csv, npm run build
+
+-can export js stuff with the word export default function, aand to get it you say import.
+can call it by name-if not default, cakk it in  curly brackets, can rename and say {officalName as casualName} from cool
+
+
+packages, goes in browser...

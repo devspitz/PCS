@@ -169,14 +169,14 @@
     }
 
     const snakeHead = new Image();
-    snakeHead.src = 'snakeHead.png';
+    snakeHead.src = 'images/snakeHead.png';
     snakeHead.onload = () => {
         snake = new Snake();
         setTimeout(gameLoop, speed);
     };
 
     const applePic = new Image();
-    applePic.src = 'apple.png';
+    applePic.src = 'images/apple.png';
     applePic.onload = () => {
         apple = new Apple();
     };

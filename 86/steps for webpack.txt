@@ -1,0 +1,55 @@
+turning snake to webpack 
+1:
+npm init -y
+2:
+npm i -D webpack
+3:
+add build script to webpack --progress 
+4: 
+add start script webpack-dev-server
+5:
+npm i -D webpack-dev-server
+6:
+npm run build
+7:
+npm install webpack-cli --save-dev
+8:
+npm run build
+9:
+make src file and move both files into it
+10:
+make webpack.config.js file
+11:
+run again and yyou'll get a dist folder. can delete script tag from html
+12:
+add plug ins
+13: 
+changes in congfig file- 10:06
+14:
+make css folder/file
+15:
+add css import on top of your js file
+16: 
+need to  install loaders and rules to handle the css
+17:
+npm run build (again!)
+18:
+to erase all junk in output (in config) say clean: true
+19:
+import images one at a time(and by src in code, change it to variable names)
+20:
+rules let it decide asset/resource depending on size
+21:
+for sounds need to install a file loader and  rules, inclue it to alloow |mp3
+22:
+import sounds from file/folder one at a time (and by src in code, change it to variable names)
+23:
+install eslint - also you need the .eslintrc file
+24:
+add any other plug ins you want
+25: finally!!!!!
+npm start
+
+
+if needed
+mode: devvlompoment, dev tolools: inline map

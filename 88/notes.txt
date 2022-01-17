@@ -1,0 +1,36 @@
+88
+depndencies arent good
+so do a new Promise(reolve, reject) 
+promide.sll ehrn these thingd r don
+.then(do snything )
+
+backbones, sAVE LIBRARY AND UNDERSCORE
+then cn=ame angular js
+then react
+@anuglar(does more so its more of a framework, complex) vs react(localized more of a library),also vue 7:25
+
+you have a model and veiws
+model is the 'source of truth'
+keeps everything in sync
+-react js step by step giude
+jsx javascript xml. looks liike html but its rly js, babel converts it to js. same as react.create element(h2, stttributes, theText)
+<div/> is legal
+for classes do <div class="foo"/> even better is to do <div className="foo"/>
+go to add react in one minute
+
+can only handle one element-so wrap peices together in a div. also better: make a  React.Fragment by doing this <></>
+multiple lines wrap in (),  so we x get any ; inserted.
+ create ij=nternal reprsentaion obejects, and stick it into dom.  so x updating the entire dom.
+create react app
+setd up e/t webpack, devserver..
+npx create-react-app my-app
+cd my-app
+mpm start
+(btw can do a custom templates for like typescipt...)1020
+
+testing. react librabry, webpack,performance
+use class or function to make your jsx
+have parent and children compentents, pass things in with attributes 1033
+
+--only send rebbi the pulic and src..(not nodeand build-add to gigingonre)
+(yarn)

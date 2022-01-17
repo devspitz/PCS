@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        /*   const theHeading = <h2> with this we will try out rendering the app </h2>;
+           ReactDOM.render(
+               theHeading,
+               document.getElementById('root')
+           );
+   
+           const frontEnd = {
+               JS: 'JavaScript',
+               HTML: 'HTML',
+               CSS: 'CSS'
+           };
+           ReactDOM.render(
+               <div>Here are different languages people commonly use in front-end development: {`${frontEnd.JS} ${frontEnd.HTML} ${frontEnd.CSS}`}</div>,
+               document.getElementById('root')
+           );*/
+        const frontEnd = {
+            JS: 'JavaScript',
+            HTML: 'HTML',
+            CSS: 'CSS'
+        };
+        function getInfo(language) {
+            if (language === 'JavaScript') {
+                return <p> JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. Over 97% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries.</p>;
+
+            }
+            else if (language === 'HTML') {
+                return <p> The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript. </p>
+
+            }
+            else if (language === 'CSS') {
+                return <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+            }
+            else {
+                return <h1>error</h1>;
+            }
+        }
+        ReactDOM.render(
+            getInfo(frontEnd.JS),
+            document.getElementById('root')
+        );
+
+    </script>
+</body>
+
+</html>

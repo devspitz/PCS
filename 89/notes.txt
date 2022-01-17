@@ -1,0 +1,28 @@
+jsx IS NOT HTML AT ALL!!!
+ its a react option.
+effictint, cuz saved in virtual dom, and only updates with changes
+npx- get it without installing it. 
+1-npx create react app
+run eject script to get out of react scriptd for very sophisticated projects
+a function can give you tonz of jsx to render
+components js html and data and veiw pacgaged up to one reusable cimoonent
+function ans class use capital
+class extends react.cimpononeb=tnts
+info flows down, kids cant change  it. name=joe
+state 8:27
+lifecycle motheod
+componentDidMount() to dom,  its show time
+componentWillUnmount() going away
+
+if just making a state, you x need a constructor
+its life is onky as long as it there, if unmounts, its dead. you''ll get a new one
+es7 react/reduxgraphsql/react- native snippets
+
+multiple states are all rendered together
+
+css can have its own file . make sure to import
+
+in jsx className=clock
+
+
+

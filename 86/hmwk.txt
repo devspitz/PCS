@@ -1,0 +1,81 @@
+86 hmwk
+For homework, continue playing with webpack on your own project. In particular, as we did in last (short) class, make sure to:
+have webpack automatically generate the html with the correct bundle script(s) included (HtmlWebpackPlugin)
+try out webpack dev server to automatically rebuild your code on changes and refresh the browser
+While we don't need to become webpack experts, it's a good idea to get comfortable with how it works and working with the config file. Add some plugins/loaders on your own. Here's a few easy ones you can try
+BannerPlugin - Adds a banner to the top of each generated chunk/bundle. https://webpack.js.org/plugins/banner-plugin/
+CompressionWebpackPlugin - Prepare compressed versions of assets to serve them with Content-Encoding https://webpack.js.org/plugins/compression-webpack-plugin/
+ProgressPlugin - The ProgressPlugin provides a way to customize how progress is reported during a compilation. https://webpack.js.org/plugins/progress-plugin/ (of course the --progress flag you can pass webpack when running it (which we didn't get around to using in class) already provides nice progress feedback)
+Don't forget the config file is written in JavaScript. You're not writing magic words, your writing code. Think in terms of arrays, objects, keys and values etc.. and the config file isn't as confusing as it might first appear.
+
+If you have extra time, and haven't already done so, try retrofitting some of your old code to use webpack (ant and snake exercises might be good examples to use)
+
+
+
+
+
+
+
+
+
+look at documentation.. first 
+npm i
+npm run build
+
+someimts needs more thsn one bundle cuz
+-old app- x want to wait for everything to load
+-single page appliation, csn load part by part - lazyLoading 9:52
+
+looka by entry and meke it in2 an entry,
+thrn make another one called anythiny: 
+by output  change it to [name].bundle.js
+npm i -D html-webpack-plugin
+add to required
+add to config plugins
+can add in title, (template engines-u can put variables in your html. and when you run it, it'll populate it with your dsts)
+sp template : ./sr/index.html
+uses underscore as a default template engine, we'll use handlebars
+to get stuff stuck in2 your html <%= htmlWebpacPugin.options.title %> or handle bars {{iiiii}}
+
+for html to get an image, 1- require it, 2 keep in folder 3 or use  a diff olader html-loader go to webpack docs foe how to use it 1027
+
+what if you forget to load it?
+1-add a watch scrpit in package.json, or
+2-start will run its own wepack server and --open (npm start)
+ctl c kills it
+you needa make a package file
+clean true cleans up e/t
+
+u need uncompressed for browsers that dont accept compressed bundles
+
+--progress plugin. add --progress to all the scripts in the package.json
+
+****install eslint
+npm i -g eslint (8:10)
+then the eslint webpack plugin
+and install locally
+need to make .eslinttrc file
+eslint recommended
+
+835-SEE errors in webpack//the terminal
+
+react
+needa is for jsx for react
+if you wanna suport ie11
+
+BABEL
+transofrm e/t to see everything
+8:55 have to add to entry, cuz config was just a build tool-but dont do that..
+webpack will add stuuff that babble wont chagnes, so target: [web, es5]
+
+babel loader
+map the files in order to debug properly:
+devtools inline- source map
+
+entry dependenceis shared-- so jwuery wont load seperatly in each file 
+-called splitChaunks plugin
+
+type="module" to use inport/export without webpack
+
+lazy loading- loads in a couple seconds. 
+hot module replacemt- set up webpack not to all rec=load-just to slide in new code/9a bit complex 9:570
