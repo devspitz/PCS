@@ -16,7 +16,7 @@ li{
   list-style: none;
   display: inline;
   padding: 1em;
-  margin: 1em;
+  margin: 5px;
 }
 
 .App-header {
@@ -34,11 +34,16 @@ li{
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div {
+  margin: 3em;
+}
+.weatherDisplay {
+  border: 1px solid black ;
+  padding: 1em;
+  width: 50%;
+  margin: auto;
+}
+input {
+  width: 15% !important;
+  margin: auto !important; ;
 }

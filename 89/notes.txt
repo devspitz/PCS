@@ -23,6 +23,8 @@ multiple states are all rendered together
 css can have its own file . make sure to import
 
 in jsx className=clock
-
-
+once brought into browser, can be used anywhere
+aslo inline css in tag. do style={{background-color:'green'}} its an object
+ if list of stuf and takea way first, know that only first changed, so withh list pass in keys, so they just see if keys are same
+way more efficient. key can use index- map goved you index (thingy, index,wholearray)
 

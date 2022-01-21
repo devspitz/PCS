@@ -1,0 +1,29 @@
+special treact bootstrap
+debugging is really same, just needa find right files
+can debug in VSC. make sure rught port
+
+onClick= call function
+issue is with this, if you get a funtion (w/o invoking it), when you csll function you x have the this 8:55 to 859
+idea a: so you can  bind the click to this. this.handler = this.handler.bind(this.handle)
+idea b: bind it when you pass it to him 902 this.handler.bind(this)
+ idea a is better cuz only happends once, intstead of every time it render 
+idea c: use arrow function()=> this.handleClick. cuz rules of arrow functions is that the arrow IS this
+idea d: experimental fetute if the this is an arrow function by the top 908. called handling events.
+x always help like at 928, if you want to pass in a parrameter
+
+0 is false, so undefined
+
+for photo, open in new tab and copy paste link
+
+dothisonlu & tur: doththis  turinary
+onBlur event
+watch out with this1!!!!!!
+
+btw check new syntax for aysnc funciton
+
+use key not o get warning
+
+child x updates parent state.
+more tools, extensions, add react devlopers toold**
+SO do this.props.counter.count=this.props.counter.count+1
+so put this function to pare t. dont change parent state yourself, rather use 2 funccytions like at 1036
