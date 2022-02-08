@@ -1,0 +1,45 @@
+better to use functional components, cuz of router(even through technicall y you can work around it)
+value, functionToChangeValue
+useSate(trueu, majesv t or f magic)
+ not this anymore
+initalizes can be a function
+ex w local storage
+reuse hooks807
+store andn pull out with json if not sure if sttring or njumber
+useLocalStorage
+
+useaFOrm hook- he lid work, uselocalstoragem turns it to update hook, compboned one, awas formlocalstorage
+
+router for storage
+react-router
+or reach router
+browser router and import it
+route aorund interanally in app
+call it a NavLink.. makes it into an anchor and class active... otherwise do as a link, and it'll still work
+-navLink for styling(a or .active)
+-or do style={ ({isActive})=> {
+color : is active ? red: black}}
+- or classname={({isActive})=>{  
+reurn idActive? 'purple' : '';}
+ROUTER 6
+do this in index.js (and app.js)
+---import every page!
+route path element
+so u can go back and forward..
+nested routes<route>children goes here</route>. so they are children
+have to say where in app they will go. by the outlet
+-index route- default page that you'll get
+(used to use exact, nit its smart enigh that u x need it)
+what if page x exists, u needa add a 404 route, if x found
+example with recipe page
+1-add browser router to index.js and import
+2-add routers
+3- add route that goes to app.js
+4-here we will do the routing in the app.js cuz we need the state, but normally you just can do it in index.js
+5-we did recipes as one route as an index route
+6-recipe  tab will bring me to recipe details. if not nested, u neea say path="/*" to inclde everything inside ide it
+7-turn recipes into links and show where we are going to
+--to redirect use Navigator to="/" redirect goes into history, but it messes it up cuz loop of redirecting, , so do replace="true", to pu this in history instead
+--to save info to link instead of state, in path, do /:id, and pass in an id number when you do the link
+--get the param with a useParams hook , destructer it to pull out id/var/foo -whatever you called it. param will be a string, so turm it into a number
+now its part of the url

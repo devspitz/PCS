@@ -1,0 +1,65 @@
+91
+more react stuff
+-either .bind this/ arrow function
+.includes returns true or false----make sure its a String
+//falls through . makes eslint let  defulat in switch
+gow to move sstae to the parent levek.. put in App.js 848 and pass into kids
+.reduce
+redux- containers where state lives
+
+propType(shortcut = ipt) look at dicumentation
+.shape vs .exact
+
+forms:
+input vs state issue 950
+so set value to state
+error: its read only, cuz while u type,i,its being overwriiteen by state,
+so you needa listen to change and set that to state, so onChange(handleNameChange)
+handleNameChange (e)....this.setState
+called controlled compoment. 
+there is such thing as uncontrolled component. basically same as dom way.can read docs
+do it like this cal react way is cuz model is the truth, not the dom
+onSubmit=.....e.prevent default
+
+and use thier solutuion, but you need to do a name in the inputs. same as whichever one. its using square brackets by using the Array Style notation potus[first]
+also selcted(dropdown list) also have values, so you can use this syntax.
+with value, you needa start off with something,c uz null is nithing. empty string is not considered mepty
+SO name:' ';
+onBlur vs onChaange??? 1022
+watch whole example 1020
+NEED INTIAL STATE!!!!
+when you type, your one behind, cuz its a aysnc function, so you need await
+
+another lifeCycle function componentaDidUpdate
+(zip.length, not zip===0)
+
+92:
+makes code shine!!!!!!!!!!
+make code immutable, instead of updating objects, you make newones, and throw old ones away.
+can use libraries like immer or cricket or do it ourselves
+so if state==== old ste newprops===oldpropd
+immjutable js, you x needa rerender
+use shouldComponentOpen
+make everything pureComponent.
+either all or none sould be immutable
+Object.freeze()...8:25. it wil throw an errror if you try to break anything.
+
+HOOKS
+y? x need classses
+hard to reuse 
+not so hard to explain
+850
+state hook
+import useState
+useState()
+can use objects, but u can be blowing away part of it, so use state.variable, so ur x replacing a part of it.
+or you can lso pass in the 2nd part of the object, by itself setState(soa ll therse thingymijigs, var2)
+or you can spread existing state, and change only one part. ...state
+also effect hook. caled more often then class, this cjanhgnges after everything happens.
+random, but cool is document.title
+has lefecycle functons
+useEffect
+if only want it to run sometimes, use optimization(cuz has issue of not working) u san pass in a second param, and if it canges, useEffect will run. aka you control it with a ependecy array, if do epmpy array, nothing will happen ever-but same as Component did mou nnt
+cacn yuse areturn 9:42
+clean up.  y see 945, you end up writing code, so no mistakes
+---Example using a form with UseEffect 9:49

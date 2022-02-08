@@ -27,3 +27,5 @@ child x updates parent state.
 more tools, extensions, add react devlopers toold**
 SO do this.props.counter.count=this.props.counter.count+1
 so put this function to pare t. dont change parent state yourself, rather use 2 funccytions like at 1036
+parent child staate props
+pawrentdss give the  callback.

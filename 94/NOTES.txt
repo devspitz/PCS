@@ -1,0 +1,26 @@
+94
+ json. stringify
+put json oinyo public
+pref-setting-fornatting
+default empty araray, so x crash
+set state in use efect loop
+so [], no change, x rerender
+if code is right, with stupid s.ow mistake-like misspelled, its hardest to find
+if id changes, rerun, so put in dependicy array
+html pages vs o e vig change vs router-way bettter
+set upebppack 830
+.click is dprexated
+.join
+set headders properly cuz of cache(or expires)
+etags if data changes
+-- cannjst use an if statement, if !haveaPage then fetch
+common style-all pages look the same
+.find('button'
+.map---.join
+make sure to return it
+everything needs await
+use theDiv.slideUp/slidedown
+ can use history api from mdn, without loaing anything
+
+header file to return the header jsx
+ if !bolog.kenggth meand ki fit is empty

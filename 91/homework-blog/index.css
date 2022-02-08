@@ -1,0 +1,128 @@
+
+body {
+	margin: 0;
+	padding: 5em;
+	color: #868684;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	line-height: 1.4em; 
+	background-color: #3a3737;
+	background-position: top
+}
+
+h1{  text-align: left; color: #3f3f3f;  text-decoration: none; text-shadow: #d7d4d4; }
+
+p { margin: 0 0 15px 0; padding: 0; }
+img { border: none; }
+
+.expandable {
+  overflow: hidden;
+  color: #000;   
+  line-height: 50px;
+
+  transition: all .5s ease-in-out;
+  height: 0;
+ }
+ 
+ .expandable:target {
+  height: 50px;
+}
+ 
+h1, h2, h3, h4, h5, h6 { color: #555; font-weight: normal }
+h1 { font-size: 50px; margin: 0 0 35px 0; }
+h2 { font-size: 30px; margin: 0 0 30px 0; padding: 0; }
+h3 { font-size: 24px; margin: 0 0 20px; padding: 0; }
+h4 { font-size: 18px; margin: 0 0 15px; padding: 0; }
+h5 { font-size: 16px; margin: 0 0 10px; padding: 0; }
+h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
+
+button { padding: 5px; margin: 3em; cursor: pointer; background-color: #868684 ; color: rgb(173, 173, 173); 
+    box-shadow: 2px 1px 1px rgb(97, 97, 97); 
+	 	width: 15em;
+		border-radius: 1px;
+	display: block;
+	 margin-left: 1px;}
+#backToBlog{
+	clear: both;
+	margin-left: 25cm;
+}
+#tooplate_header {
+	clear: both;
+	width: 940px;
+	height: 106px;
+	padding: 10px;
+}
+
+#site_title { float: left; margin: 35px 0 0 10px; }
+#site_title h1 { margin: 0; padding: 0 }
+#site_title h1 a { display: block; width: 342px; height: 49px; color: #333; text-indent: -10000px; }
+
+#header_right {
+	float: right;
+	width: 560px;
+}
+
+#users{ 
+     clear: both;
+     display: inline-block;
+     width: 100%;
+	 margin: auto;
+}
+#posts{
+     display: none;
+	 margin: auto;
+    height: 103em;
+    margin: auto;
+	padding: 1em;
+}
+#tooplate_menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#tooplate_menu ul li {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	width: 102px;
+	height: 36px;
+ 	line-height: 36px;
+	margin-right: 1px;
+	font-size: 14px;
+	color: #7c7c7b;	
+	text-align: center;
+	text-decoration: none;
+	font-weight: 400;
+	outline: none;
+	border: none;
+}
+
+#tooplate_main_bottom { width: 960px; height: 10px; background: url(images/tooplate_main_bottom.png) no-repeat }
+#tooplate_main {
+	clear: both;
+	width: 920px;
+	padding: 30px 20px 0;
+	background: url(images/tooplate_main.jpg) repeat-y
+}
+
+.content_box {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+.lb { margin-bottom: 0 }
+
+.hr_divider {
+	border-bottom: 1px solid #999
+}
+
+#tooplate_content {
+	float: left;
+	margin-left: 40px;
+	width: 360px;
+}
+
+.tooplate_sidebar {
+	width: 240px;
+}

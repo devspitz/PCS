@@ -1,0 +1,20 @@
+ body {
+   background-color: black;
+   text-align: center;
+ }   
+
+.aButton {
+  padding: 2em;
+  margin: 1em;
+}
+.fullButton{
+  padding: 1em;
+  margin: 1em;
+   width: 25em;
+   border-radius: 5px;} 
+   
+   .theInput { 
+       padding: 3em;
+   background-color: red;
+   color: black;
+ }
