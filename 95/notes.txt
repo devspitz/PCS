@@ -1,0 +1,42 @@
+FUUC FLASH OF UNSTYLED CONTENT(esp an issue with webpack 745)
+npm i -d  copy-webpack-plugin ---save --dev to load css right away
+and put in the confug stuff 743 cpoy from index.css 
+
+in jx, wev  xneed id
+[]happens once
+[] map to notthing, so u x have to check if stsate exists
+import xyz as gyg-if non defaukt import,
+as... use destructer with a colon to calll it something else
+state flrwhich is beeing used
+hve ti call it right ghing
+make sure right thing is being reerendered
+
+&& syntax
+
+css transition/snimstionds
+react suspnse
+finaly weather tryed or caught do this
+
+
+915 get the rrouter working
+920 sytax
+nested, or shells withb subroutes
+best math * order x mattera
+mavigate to diffthingy
+navlink
+x save in state, save id in routr for refresh to wwork947
+uase pRMS TO GET ID VRFROM URL
+THINGS U ROUTE WITH SHOW IN THE OUUTLET
+mobx
+redux
+keep state in store (or many stores in modx)
+10:10 these archeitects/design philosphu originally called flux 
+2 key value pairs, action: what u are doing an to what peice
+so dispacher if shayuch, it sends it to store to make things happen,
+store will change and veiw will rerender.
+moves state out of the grsndparent to the store.
+very collaberative application 1017
+yanky leiberchuck
+long beach, passaic, mir-x get thrown off,  pragers, brilliant try out mehalxhim, mitzuyum, baall kishin ,
+balanced, gesnhmak side,ernst 
+garfinkel/spitz
