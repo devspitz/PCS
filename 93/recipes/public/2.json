@@ -1,0 +1,15 @@
+{
+    "id": 2,
+    "name": "Burger",
+    "ingredients": [
+        "bun",
+        "burger",
+        "veggies"
+    ],
+    "directions": [
+        "Put the bun in the oven",
+        "Put the burger in the oven",
+        "Put the veggies in the oven"
+    ],
+    "picture": "./burger.png"
+}

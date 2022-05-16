@@ -1,0 +1,16 @@
+Class 100
+server-gives the info to the browser
+if dynamic, who will bring you this data and process request and generate answer
+node.js 
+Deno is another language to also made a server
+(nodejs.org what is it? js running program out of browser 2:27)
+also serves answer to requests from browser
+in conrol terminal type node and you can use it like the console, js without dom(no browser) sace c:docs/myfile/repl.txt
+ctl c killlsprogram
+node x has windows, so not global(can get global in modules)
+uses require, cuz written with old js, but you can use import
+it runs in local host
+npm i -g nodemon  //it will restart for changes nodemon servder
+node school excersizes nppm install -g learnyounode
+do it in the command promp
+procees.argv is w=the arguments dent around, ccN SKIPN [2] OR ARRAY . REDUCE

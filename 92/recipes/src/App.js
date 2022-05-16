@@ -38,7 +38,6 @@ class App extends Component {
                 <div className="text-center">
                     <h1>PCS Recipes</h1>
                     <hr />
-                    <h4>recipes</h4>
                     <RecipeList recipes={this.state.recipes} selectRecipe={this.selectRecipe} />
                     <hr />
                     <RecipeDetails recipe={this.state.recipes[this.state.selectedRecipe]} />

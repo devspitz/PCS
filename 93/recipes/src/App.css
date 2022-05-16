@@ -1,12 +1,21 @@
+.bulletless {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: blanchedalmond;
 }
+
 li {
   color: navy;
 }
- ul li{
-list-style-type: none;
+
+ul li {
+  list-style-type: none;
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

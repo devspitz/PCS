@@ -1,0 +1,26 @@
+'use strict'
+.reduce 
+condition chaining ? : is part of js
+apache spins up threads as multiple requests come in
+node only one thread
+package.json type: module. now you can use import
+pass in temianal
+the arguments to run with
+toString is the same as utf8
+if error, return, so not continue on.
+$ ls is a adirectory listing
+filter
+callbacks wont happen till you end running the js code. therefore intrevaal WITH timeout
+read and write stream 
+write steam, diff types of files, pass in file name or name of file to read
+.pipe
+300 okay
+301 redirect
+baseUrl+ new Url
+searchParams
+.get
+can make your own events 1028
+extend to eventTarget
+Rather than doing it manually, you may find it more convenient to
+  rely on [`async`](https://www.npmjs.com/package/async) or
+  [`run-parallel`](https://www.npmjs.com/package/run-parallel)

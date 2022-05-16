@@ -6,11 +6,14 @@ export default function RecipeList(props) {
     const { recipes, selectRecipe } = props;
 
     return (
-        <ul className="bulletless">
-            {recipes.map((item, index) => (
-                <li key={item.id} onClick={() => selectRecipe(index)}>{item.name}</li>
-            ))}
-        </ul>
+        <>
+            <h4>Recipes</h4>
+            <ul className="bulletless">
+                {recipes.map((item, index) => (
+                    <li key={item.id} onClick={() => selectRecipe(index)}>{item.name}</li>
+                ))}
+            </ul>
+        </>
     )
 }
 

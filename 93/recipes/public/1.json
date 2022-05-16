@@ -1,0 +1,10 @@
+    {
+        "id": 1,
+        "name": "Pizza",
+        "ingredients": [
+            "dough", "tomato", "cheese", "sauce"
+        ],
+        "directions": ["Assemble ingredients", "Bake"]
+        ,
+        "picture": "./pizza.png"
+    }

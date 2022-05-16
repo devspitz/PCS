@@ -1,0 +1,21 @@
+screenscrape-take info from server
+use axios
+read -end
+write- finish
+end event-what to do at the end
+can register event on the http.get 
+'data', console.log. if your passing in one argument, you dont need to wrap it
+package file if you starting to install stuff do:  npm init -y... also cont..require
+make sure to return if you install stuff
+
+import stuff
+every file IS a module
+module.exports-to chang things/ eexports its a copy, like pointing
+pointing to objects 8:13
+
+downsides of pointing
+tree shapingg only gives you peices you use
+828 with classes.
+pacgaee.json type= module
+readStream
+this.pipe //this// into the (res)
