@@ -1,0 +1,9 @@
+telnet client windows o
+telnet localhost 81
+[ad right, pad left, adds x
+.tosrteing().padSart(2,'0')
+look at notes on useConnect.js
+post- when you get info from the server(like a form)
+can transform data, (thats why you woulldnt use pipe)..or use through 2 map - map will pipe it to the response1023.
+make sure to end()
+* download postman(vac extension)1031- for running on local host

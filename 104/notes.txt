@@ -1,0 +1,42 @@
+find in the params a value and GET the value out
+debugging 810
+//get nodemon extension for vsc
+vsc
+node --inspect hkj.js
+node inspection manager
+install connect
+basic authentication
+writeHead()ww.ai=uth.... 840
+first call doesnt get atheraztion
+http vs g\https-f more secure 
+calculator can translate messages
+
+install express and require it. need app.listen. /= listen on any endpoint
+app.get, app.post
+pquery.name... 
+create mpx expreess app 215
+routes hanging off of others
+can make req.locals boject, or pass in a aobject, also app.locals.title = "hi"
+
+next engine ,
+(enginges are templates)pug, or hoganExpress 10:13
+look at expressjs.com
+update package to have nodemon instead of node
+mustache template
+section of people
+.=the thing itself if its a string or number
+if empty arrray, cant use logic, so you needa predetmine logeic in JS and so display empy if its empty 1028
+hw: generate express app adn =d rebuils a contacts app, hard cdoe contenxt, and at end you can have passed in as contacts
+urlencodr,  gerts gets snd posst
+posts onto same utl
+anchor is a get, form is a post,
+query papraems are always STRINGS
+need posts for gets of forms
+object.assign, reassigns info
+crud = create,read update,delete. with rouing
+
+set dddebug test*. inside every file
+
+hclemebts job
+august 8-22
+class supper clean dress daven
