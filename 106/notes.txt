@@ -1,0 +1,33 @@
+update/put, delete, post and get ajax style
+restfull achitechuture- 
+also patch apdates a part, use jsonpatch
+*graphql.org graph ql passes in queryies thru one main endpoint
+post.
+insert into contacts...
+do ???? to req.xyz
+*postman is in vsc somehow... how to use:  post to local host:300/api/contacra, and send
+can see also whT IT LOOKS LIKE AS A POST, SO IN BODY, SEND A;ONG as header type JSON
+//btw sockets and make mini servers and windows & echo server in class 103
+201 status code means its good, really correctly you are supposed to send along location and info, like id mdn docs
+results.insertId
+
+connection.end(), but very expensive to keep making new connections, so instead make a pool of connections, that can be used and returned to the pool
+so add lines of code to create a pool and require it in your file. pool.query, so you get connection and release for free
+have to export the pool!
+pool events, aquire, connection,enqueue-if you havev to wait, release.
+process.enc.sqlpassword $env:sqluser="NodeUser124"(only alive for that terminal)//can have it in yyour batch file//enviroment varables//user secret extension
+router.route
+results is an array(unlesss you do it otherwise)
+204=no content /for a delete---look for chandedRows  / affected rows for updates
+add nodemon to start script
+mdn http put
+for put you x send anything back, rather you update. satus code is 204/200
+api for status codes
+res.sendStatus
+dif of post vs put
+915
+two locql host ports cannkt share ifo cuz of cross-domain for cors. proxy/ google to config coors. or run it in apache
+app.js ln 16 is the file server
+sget the json in js
+swnd along whole resource
+have t o refetch again the list method:delete

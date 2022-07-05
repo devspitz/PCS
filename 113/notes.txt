@@ -1,0 +1,20 @@
+skip and limt in sql or mongo  750
+run from single server, let it all package together. use proxy, sends any extra ypu need from the ohter guy.
+proxy:{ http://localost:8080} in package.json. turrn off cors-uneeded now!
+(find in folder)
+you now in every cilient fetch, do not need to connct to localhost, nor any headers
+run build- optimized prodution builfd in dist folder, so write && move build ../blogApi/public basicly, move it to public
+turn on static file server
+mongoose. 
+make a mmodel, which is a name of a collection, and you shape the scheme of how it should look
+1- install it
+2- tequire and connect to it
+findByIdAndUPdate
+
+joins in mongo. 917. agreggate, from, localfeild, forgienf eild, as
+add together a bunch of recipesagregate
+$gorup
+$id
+.match
+itll pipe, one into the next peice of 'middleware'
+i.f you have one server, in case of refresh, instead of 404 just redirect him him to inx ews.sendFile(_dirname,public, index.html)

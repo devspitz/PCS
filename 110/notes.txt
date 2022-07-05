@@ -1,0 +1,81 @@
+inttead of relatoiinal, mango stores objects as obect like stuff
+atlas-version in the cloud
+database access
+network access
+**** download comunity server mongo, e\accept all defaults. run as srvice?-no aotuomatically opens sas you stsart your computer
+new connection
+look by database for string 804
+get sample info
+a table is a collection.
+cmd
+for sehll
+mongod
+make sure you have place for data to exist
+in sytem variables, you have to havr  mongo, AY NEW
+or give it the paclth to the .exe
+make a c://data/db folder
+runn real mongo on anthoer command propmt
+mmongo db docs
+(mongosh vs mongoi)
+mongo rc file
+-show dbs
+-use one
+-show collections
+-use foo
+bd.bar.insertOne({foo:"bar, _id:5"})
+-show collections
+-db.bar.find(); db.bar.find().pretty,db.bar.findOne()/will show you the datbse
+.insertany, wil insert as amy as ypu want ex ([{name: 'bill'}, year:'434'}, {name: 'bill'}, year:'434'}])
+bd.presidents.deleteOne({_id: 6};)
+delete insert find update
+findOne find, or updateOne updateMany same for insert and elete.(dont rly use plain commands)
+,safer: do findOne
+to limit damage
+
+bd.presidents.replace({name: 'joe'}, {year: 2022})
+bd.presidents.deleteOne(Object.make???{_id: '686v687'}, {year: 2022})
+db.presidents.find({}, {name: 1}). 2nd obect, you'll pnly get the column you turned on (and id), 0 is to turn off
+_id: 0 - turns off id.
+or in you do all except name.-db.presidents.find({}, {name: 0})
+(cant mix, id is excption).
+projection: shaping data in way you want.
+-db.presidents.find().sort({year: 1})//will sort by year descending
+-db.presidents.find().sort({year: -1})//will sort by year ascending
+-db.presidents.find().sort({year: -1, name: 1})
+to run js, say
+1-load(\\c\\nk\\njk'path to the mongoFunction.js)
+createDocs('foo', 500);
+2-(in in mongojrc, you can acces it.)
+3-also you can write a function in the shell like regular js
+can do -edit person, youll get in notepad the thing to edit, for local enviroemtn
+-show collections
+-db.banking.count()
+-db.banking.find({firstName: 'joe'}).count()
+-let jonny = db.banking.find({firstName: 'joe'})
+-jonny.forEach
+-bd.presidents.updateOne({_id: 6}, {$set:{name: 'lolla'}})
+-bd.presidents.updateOne({_id: 6}, {$inc:{age: 3}}) // means increment
+-bd.presidents.updateOne({_id: 6}, {$unset:{name: 'lolla'}}) it would remove
+
+-db.banking.find({salart: {$gt: 1200}}) gets the salaroes that are 1200S
+
+-db.banking.find({$and: [{firstName: 'joe'}, {lastName: loj})];
+
+-db.banking.find({$and: [{salary: {$gte:111}, {lastName: loj})];
+
+-db.banking.find({$and: [{salary: {$gte:111}, position{$eq: doc})];
+
+-db.banking.find({$or: [{salary: {$gte:111}, position{$eq: doc})];
+
+
+-db.banking.updateMany({}, ($set: references: [ 'lilly', 'tigre']}});/ every people will get sn array of references
+=$pull, willl take someone out
+$push will add
+.pop 1, will pull off last guy
+.pop -1, will pull off first guy
+
+-use foo db.dropDatabase
+(our homemoade aysync function)
+
+
+

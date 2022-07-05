@@ -1,0 +1,13 @@
+111
+ debugging 754
+we biukt a full mongo/react app
+.get or .use
+you can have every page pass in a collection of links
+socket, mongodb, socket.io, bootsrap, in blog2, do create-react-app blog-client&reactrouter&socket.io&npm i
+play with postman 845
+(920-930
+usestate[], emptyarray is efaukt, so it wont crash
+formData explained 945
+
+techolq email, npm stuff emailresume to kramer
+(add 11 to id?)

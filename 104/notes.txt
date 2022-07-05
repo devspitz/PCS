@@ -35,8 +35,13 @@ need posts for gets of forms
 object.assign, reassigns info
 crud = create,read update,delete. with rouing
 
-set dddebug test*. inside every file
-
+set dddebug test*. inside every file 
+enivroment vaiablse-in sytem configes. in cmd say 'set' for list.. will look for port in enivroemtnal variables, doesnt needa be sytem level,
+so set a = 5, and itll only exist in tnhis window.
+powershell rums .net, so powerfull $env:foo="bar", $env:foo
+port:80
+debug=* or contacts:*, turns on all debugging. can say deubg(''say this)
+better than console.log, cux you can turn things on ad off
 hclemebts job
 august 8-22
 class supper clean dress daven

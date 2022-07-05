@@ -1,0 +1,29 @@
+div {
+  margin: 1em;
+  padding: 1em;
+}
+
+input, button {
+  margin: 1em;
+}
+
+#messageform {
+  display: flex;
+}
+
+
+#message {
+  flex: 1;
+  margin-right: 1em;
+}
+
+#messagesContainer {
+  display: none;
+}
+
+#messages {
+  background-color: lavender;
+  height: 13em;
+  border: 1px solid brown;
+  margin-bottom: 1em;
+}

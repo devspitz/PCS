@@ -1,0 +1,18 @@
+how to check if there was an update?
+-setInterval( check to get what changed with a timestamp column(cuz one column in sql should be time, and thena ask for info WHERE TIMESTAMP IS LAST),5000)
+bad idea- to moidfy array whilr looping thru it, so instead do a fileter
+valitadtion for server side is very important for hackers..can use librareies
+for it, ex JOI, define schema of your object. epmy strig isnt allowed by fedault
+.validate and get an error e, sabourtEarly: false... 831, sends 2 objects with details
+cookies ansd settings
+-on form if you sdont do an action: post, it'll be put in the params
+res.layout would be avail to everyone
+so.. store colors in cookies, so it'll remember them.
+cookiesParser()	//default is that you have it
+if applies to all pages, do it in app.js
+res.cookie('colors', JSON.stringify(color));
+app/clear site data
+click on the chrome guy and the bottom right of the screen to really kill the browser
+cookies only last while browser is on, so to help, on cookie, you needa keep it alive, so pass in either endDate, expires: mew Date...
+or in an amount of miliseconds maxAge: 200000
+so use cookies value

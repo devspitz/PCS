@@ -1,0 +1,6 @@
+
+  <p>welcome to {{title}}</p>
+<form method="post" action="login">
+  <input name="name">
+  <button>submit</button>
+</form>

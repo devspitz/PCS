@@ -1,0 +1,11 @@
+
+
+<body>
+  {{#posts}}
+  <div class="post">
+    <h2>{{title}}</h2>
+    <h3>by {{author}}</h3>
+    <div>{{body}}</div>
+  </div>
+  {{#/posts}}
+</body>

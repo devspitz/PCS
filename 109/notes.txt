@@ -1,0 +1,19 @@
+console.dir
+had to make sure cart constructor didnt blow away anything 1022
+object.entries
+
+server initiate conversation, client can initally send thing baxk and forth
+
+***socket.io, in cased your brower didnt support it- now not an issue. can look at thier examplrs
+isomorphic-both on same side, from clietnt to server
+mkdir chat
+npm init -y (for a pkg file)
+npm i express
+npm i socket.io
+default yoou get index
+autmatic reconnection from server
+
+-random, in node, u have promisify, utility that will take a callback and make it into a promise
+and callabckify
+find/indexOf..how you look in an array
+rooms 245

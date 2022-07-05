@@ -1,0 +1,7 @@
+
+
+<form method="post">
+  <label><input name="title"> </label>
+  <label><textarea name="body"> </textarea>
+    <button>Post</button>
+</form>

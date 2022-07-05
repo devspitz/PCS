@@ -1,0 +1,11 @@
+<h3>{{title}}</h3>
+{{#items}}
+
+<div class="col">
+    <h2>item {{item.id}}</h2>
+    <h4>{{item.name}}</h4>
+    <img class="product-img" src="{item.{img}}" alt="{{item.name}}">
+    <h1 class="card-title pricing-card-title">{{item.price}}</h1>
+    <h2>quantity {{quantity}}</h2>
+</div>
+{{/items}}

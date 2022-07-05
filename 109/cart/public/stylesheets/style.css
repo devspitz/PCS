@@ -1,0 +1,27 @@
+.product-img {
+  height: 5em;
+  width: 5em;
+}
+table {
+  margin: auto;
+}
+
+tr {
+  height: 8em;
+  padding: 5em;
+  margin: 5em;
+}
+
+
+
+tr td {
+  height: 5em;
+  padding: 1em;
+  margin: 1em;
+}
+
+thead {
+  height: 3em;
+  background-color: gainsboro;
+  border: solid 1em gray;
+}

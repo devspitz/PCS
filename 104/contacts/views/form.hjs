@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <h1>{{ title }}</h1>
+    <h3>Add A Connection</h3>
+    <form id="addContactForm" method="post">
+        <div class="formGroup">
+            <label for="firstName">first:</label>
+            <input id="firstName" name="firstName" required>
+        </div>
+        <div class="formGroup">
+            <label for="lastName">last:</label>
+            <input id="lastName" name="lastName" required>
+        </div>
+        <div class="formGroup">
+            <label for="email">email:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="formGroup">
+            <label for="phone">phone</label>
+            <input name="phone" id="phone">
+        </div>
+        <div>
+            <a href="/addContact/updateContact">Update</a>
+            <a id="cancel" href="/index">cancel</a>
+        </div>
+        <button type="submit">submit</button>
+
+    </form>

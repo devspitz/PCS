@@ -1,0 +1,18 @@
+make sure after res.cookies, you didnt render/send, so you have to do next/redirect to stop from spinning
+to have section not show yrt, put in in #NAME, WHICH WILL BE EMPTY, so it eont run till your ready
+action in a form will bring you somewhere
+new table, pick unique in index, primary
+*** Do database axapmle with him 8:15
+even with next, you should return it, so it shouldnt try to do the rest of the appp
+? can be used, if exists, happen
+needa say next always
+use lobrary for log ins
+bcrypt... SHA-256
+if sql error..930
+items example.
+input with hidden value as id.
+inline form from bootstrap
+ntework->payloda for what you sent
+next(or redirect)!!
+also make sure app.js is in order!!!
+console.log prints out in the vsc teriminal

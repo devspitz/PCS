@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="normalize.css" />
+    <title>Dine by Design</title>
+    <link rel="icon" href="fav.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style (1).css">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+<style>
+     input {
+            display: inline-block;
+            width: 70%; 
+            line-height: 2em;
+            margin: 1em;
+        }
+        label {
+            display: inline-block;
+            width: 20%; 
+        }
+        textarea {
+            margin: 1em;
+            width: 95%;
+            height: 4em;
+        }
+        button {
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="resteraunt.php" method="POST">
+       <label>Name</label>
+        <input type="name" name: "Name:" id="name" class="formItem">
+        <label>Date Visited</label>
+        <input type="date" name: "date visited:" id="dateVisited" class="formItem" min="8-05-2010" required>
+        <label>Email</label> <input type="email" name="Email:" id="email" class="formItem" >
+        <label> Rate us from 2-5 stars</label><input type="range" name="ratings" id="range" class="formItem" required>
+        <label>Your Experience</label>
+        <textarea name="Comments" id="" cols="10" rows="10" class="formItem" placeholder="Please tell us all about your visit"></textarea>
+        <button>
+            Submit Now
+            <input type="submit" value="" class="formItem">
+       </button>
+    </form>
+    <a href="index (1).html">back to homepage</a>
+</body>
+
+</html>

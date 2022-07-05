@@ -1,0 +1,20 @@
+contactsDB
+npm start
+local enviromental variables
+can only open debugs in contact:*
+
+xxamps, sql, apache
+new user
+put in variables in table 950
+npm modemysql/2
+callback-to promise us promisify function
+how to you connect to the DB? look at the github read me antt paste codekeep connection oepom
+expensive resource to kepp open
+we mak ei t global, so you can get in in contcats
+cant have 2 guys runig on port 80
+select, insert into contacts()first,last,email-by post, dont directly pass in innfo, because of sql injecttion
+select...WHERE //this is true 1023
+for id it is type=hidden, soo its part of formm and submitted, but you dont see it!
+404 isnt an error for the machine
+
+debug.], you'll get affectedRows,do you can send an individulized error

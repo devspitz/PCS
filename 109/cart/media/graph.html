@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="normalize.css" />
+    <title>Dine by Design</title>
+    <link rel="icon" href="fav.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style (1).css">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body,
+        header,
+        table {
+            font-family: Allura, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: larger;
+            margin: auto;
+            width: 80%;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+
+            border-top: 1px solid rgb(94, 0, 0);
+            padding: .5em 1em;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        caption {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        tbody tr:nth-child(odd) {
+            color: rgb(255, 246, 244);
+            background-color: rgb(109, 36, 3);
+        }
+       tfoot tr:last-child {
+            background-color: rgb(224, 196, 195);
+        }
+
+
+
+        input {
+            width: 40%; 
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="commentsForm.html" class="otherTabs">Tell us about your experience</a>
+        <a href="index (1).html " class="otherTabs">Home</a>
+    </header>
+    <form action="rating.php" method="post"></form>
+    <table>
+        <caption>Check out our awesome food ratings!!!</caption>
+
+        <thead>
+            <tr>
+                <td> Steak </td>
+                <td> Chicken </td>
+                <td> Burger </td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>*****</td>
+                <td>***</td>
+                <td>****</td>
+            </tr>
+            <tr>
+                <td>Five stars</td>
+                <td>Three stars</td>
+                <td>Four stars</td>
+            </tr>
+
+ 
+            <tr>
+                <td> <input type="text" name="yourname" placeholder="Enter rating " /><label>  stars </label></td>
+                <td> <input type="text" name="yourname" placeholder="Enter rating " /><label>  stars </label></td>
+                <td> <input type="text" name="yourname" placeholder="Enter rating " /><label>  stars </label></td>
+            </tr>
+                </tbody>
+                   <tfoot>
+            <tr>
+                <td><button type="submit">Submit</button></td>
+                <td><button type="submit">Submit</button></td>
+                <td><button type="submit">Submit</button></td>
+            </tr>
+        </tfoot>
+        </form>
+    </table>
+
+</body>
+
+</html>

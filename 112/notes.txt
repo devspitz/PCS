@@ -1,0 +1,7 @@
+we added:
+socket.io,
+cleaned up server,
+authentication  (we also did it in 108/use-session)
+850 postman
+fio mongozShell techloq
+mongo: index 1:20, make unique. from shell, db.thiscollection.createIndex({name:1},{unique:true})

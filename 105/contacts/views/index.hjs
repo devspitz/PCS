@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{ title }}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1>{{ title }}</h1>
+
+  <body>
+    <table id="contactsTable">
+      <thead>
+
+      </thead>
+      <tbody>
+        {{#contacts}}
+        <th>{{firstName}}</th>
+        <th>{{lastName}}</th>
+        <th>{{email}}</th>
+        <th>{{phone}}</th>
+        </tr>
+        {{/contacts}}
+
+      </tbody>
+      <tfoot>
+        <a id="addContact" href="/addContact" colspan="4">add contact</a>
+      </tfoot>
+    </table>
+  </body>
+
+</html>
